@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 .navbar{
     display: flex;
     /* justify-content: center; */
@@ -72,9 +75,9 @@ body{
 }
 .footer{
     width: 100%;
-    height: 75px;
-    border: 5px solid green;
-    background-color: goldenrod;
+    height: 25px;
+    border: 5px solid wheat;
+    background-color: whitesmoke;
 }
 #home{
   display: flex;
@@ -127,12 +130,15 @@ body{
     box-shadow:  0 0 5px whitesmoke, 0 0 10px whitesmoke, 0 0 15px whitesmoke;
     font-weight: bold;
 }
+
+
 #about{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     padding: 20px;
     margin-bottom: 50px;
+    background-color: grey;
 }
 #pic{
     display: flex;
@@ -155,7 +161,11 @@ body{
 #portofolio{
     display: flex;
     flex-direction: column;
-
+    background-color: grey;
+    color: white;
+    align-items: center;
+    padding: 20px;
+    background-color: grey;
 }
 .gallery{
     display: flex;
@@ -168,4 +178,10 @@ body{
     height: 240px;
     border: black solid 1px;
     margin: 10px;
+    
+}
+.gallery:hover {
+    position:relative;
+    display:block;
+    z-index: index 20;;
 }

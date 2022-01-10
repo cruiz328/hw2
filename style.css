@@ -144,8 +144,8 @@ body{
     display: flex;
 }
 #pic img{
-    width: 575px;
-    height: 400px;
+    width: 25%;
+    height: auto;
 }
 #intro{
     display: flex;

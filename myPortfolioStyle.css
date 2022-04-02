@@ -66,6 +66,13 @@ html{
     transition: all .5x ease;
     
 }
+.nav_bar > ul >li > a:hover {
+    font-size: 50px;
+    width:100px;
+    /* border: 1px solid white; */
+    box-shadow:  0 0 5px whitesmoke, 0 0 10px whitesmoke, 0 0 15px whitesmoke;
+}
+
 
 /* Content */
 
@@ -138,7 +145,7 @@ body{
     box-sizing: border-box;
     padding: 20px;
     margin-bottom: 50px;
-    background-color: grey;
+    background-color: rgb(204, 85, 0);x
 }
 #pic{
     display: flex;
@@ -146,6 +153,10 @@ body{
 #pic img{
     width: 25%;
     height: auto;
+}
+.side-by-side{
+    display: flex;
+    flex-direction: row;
 }
 #intro{
     display: flex;
@@ -165,7 +176,10 @@ body{
     color: white;
     align-items: center;
     padding: 20px;
-    background-color: grey;
+    background-color: forestgreen;
+}
+.bigPicture{
+    size: 500px;
 }
 .gallery{
     display: flex;
@@ -180,8 +194,33 @@ body{
     margin: 10px;
     
 }
-.gallery:hover {
+.img1:hover {
+    width: 370px;
+    height: 250px;
     position:relative;
     display:block;
     z-index: index 20;;
+}
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .title {}
+  }
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+@media only screen 
+  and (min-device-width: 700px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    #home::before {
+        background-size: 50% 100%;
+        /* width: 100%;
+        height: ; */
+    }
 }
